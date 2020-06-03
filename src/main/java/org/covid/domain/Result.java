@@ -6,20 +6,33 @@ import lombok.ToString;
 
 @Data
 public class Result {
+
     @JsonProperty(value = "country")
     private String country;
+
     @JsonProperty(value = "confirmed")
     private String confirmed;
+
     @JsonProperty(value = "recovered")
     private String recovered;
+
     @JsonProperty(value = "critical")
     private String critical;
+
     @JsonProperty(value = "deaths")
     private String deaths;
+
     @JsonProperty(value = "latitude")
     private String latitude;
+
     @JsonProperty(value = "longitude")
     private String longitude;
+
+    @JsonProperty(value = "lastChange")
+    private String lastChange;
+
+    @JsonProperty(value = "lastUpdate")
+    private String lastUpdate;
 
     public Result() {
     }
