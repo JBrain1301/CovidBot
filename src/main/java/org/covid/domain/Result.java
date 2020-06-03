@@ -10,6 +10,9 @@ public class Result {
     @JsonProperty(value = "country")
     private String country;
 
+    @JsonProperty(value = "code")
+    private String code;
+
     @JsonProperty(value = "confirmed")
     private String confirmed;
 
