@@ -19,7 +19,9 @@ public class RestClient {
                 .build();
         try {
             Response response = client.newCall(request).execute();
-            return response.body().string();
+            String string = response.body().string();
+            System.out.println(string);
+            return string;
         } catch (IOException e) {
             e.printStackTrace();
         }
