@@ -10,7 +10,7 @@ public class RestClient {
     private OkHttpClient client = new OkHttpClient();
 
     public String requestCountryByName(String countryName) {
-
+        System.out.println(countryName);
         Request request = new Request.Builder()
                 .url("https://covid-19-data.p.rapidapi.com/country?format=json&name=" + countryName)
                 .get()

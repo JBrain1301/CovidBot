@@ -26,7 +26,9 @@ public class Bot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         SendMessage message = new SendMessage().setChatId(update.getMessage().getChatId());
         String text = update.getMessage().getText();
+        System.out.println(text);
         String enCountry = countryMap.get(text);
+        System.out.println(enCountry);
         if (enCountry == null) {
             handler.command(text, message);
         } else {
